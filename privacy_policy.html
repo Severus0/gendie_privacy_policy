@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <h1>Privacy Policy – “Gendie”</h1>
+  <p><strong>Last updated:</strong> 15 January 2026</p>
+
+  <p>
+    This privacy policy explains how the **“Gendie”**
+    Android application (“the App”) handles information. The App is developed and published by
+    <strong>Seweryn Polec</strong> (“we”, “us”, or “our”).
+  </p>
+  <p>
+    By using the App, you agree to this Privacy Policy.
+  </p>
+
+  <h2>1. Overview</h2>
+  <p>
+    Gendie is a multi-language learning tool designed to help users practice the grammatical gender of nouns (e.g., French "le/la", Polish "ten/ta/to"). 
+    The App is designed with <strong>privacy and data sovereignty</strong> as a priority.
+  </p>
+  <ul>
+    <li>The App does not require a user account or registration.</li>
+    <li>The App is primarily offline, with optional network features for asset management.</li>
+    <li>We do not collect, store, or sell your personal data.</li>
+  </ul>
+
+  <h2>2. Data Handling and Storage</h2>
+  <h3>2.1. Local Device Storage</h3>
+  <p>All learning progress and settings are stored locally on your device in language-specific profiles. This includes:</p>
+  <ul>
+    <li><strong>Learning Progress:</strong> Words seen, correct/incorrect counts, Spaced Repetition (SRS) intervals, and mastered word lists.</li>
+    <li><strong>Statistics:</strong> Total scores, daily streaks, and answer accuracy.</li>
+    <li><strong>Preferences:</strong> Theme choices (Light/Dark), audio toggles, and learning thresholds for each language.</li>
+    <li><strong>Notification Settings:</strong> Custom schedules and times for daily reminders.</li>
+  </ul>
+  <p>
+    This data is stored using Android’s standard local storage (SharedPreferences) and is not accessible to us or any third party.
+  </p>
+
+  <h3>2.2. Manual Backup and Portability (Clipboard)</h3>
+  <div class="highlight">
+    <strong>User-Controlled Data Portability:</strong> The App provides a feature to backup and import your data via the system clipboard.
+  </div>
+  <ul>
+    <li><strong>Export:</strong> When you trigger a backup, the App generates a JSON-formatted text string of your progress for the current language profile and copies it to your clipboard.</li>
+    <li><strong>Import:</strong> When you trigger an import, the App reads the text currently stored in your clipboard. It only processes strings identified as valid Gendie backup codes.</li>
+    <li><strong>No Cloud Sync:</strong> We do not provide automated cloud synchronization. You are responsible for saving your backup strings in a safe place (such as a notes app or encrypted file) if you wish to transfer progress between devices.</li>
+  </ul>
+
+  <h2>3. Internet and Network Connectivity</h2>
+  <p>The App requests internet access for the following <strong>optional</strong> user-initiated actions:</p>
+
+  <h3>3.1. Audio Asset Downloads</h3>
+  <p>
+    Users may choose to download high-quality recorded audio packs for specific languages (e.g., Polish or French recordings). 
+    These assets are hosted on <strong>GitHub Releases</strong>. When you click "Download" or "Update":
+  </p>
+  <ul>
+    <li>The App connects to GitHub to fetch the requested ZIP file.</li>
+    <li>No tracking identifiers, analytics, or personal information are sent during this request.</li>
+    <li>Once downloaded, the audio files are stored locally, and the App returns to offline mode.</li>
+  </ul>
+
+  <h3>3.2. External Links</h3>
+  <p>
+    The App contains links to external services (e.g., Wiktionary for word research or YouTube for tutorial videos). Opening these links triggers your device’s web browser. Interaction with these external sites is governed by their respective privacy policies.
+  </p>
+
+  <h2>4. Permissions Used</h2>
+  <ul>
+    <li><code>android.permission.INTERNET</code> & <code>android.permission.ACCESS_NETWORK_STATE</code><br />
+      Used exclusively to download optional audio asset packs from GitHub.
+    </li>
+    <li><code>android.permission.POST_NOTIFICATIONS</code> (Android 13+)<br />
+      Used to display practice reminders. This is only active if you explicitly enable reminders and grant permission.
+    </li>
+    <li><code>android.permission.RECEIVE_BOOT_COMPLETED</code><br />
+      Used to reschedule your custom reminders after a device reboot.
+    </li>
+    <li><code>android.permission.SCHEDULE_EXACT_ALARM</code><br />
+      Used to ensure notifications appear at the precise time you have configured.
+    </li>
+  </ul>
+
+  <h2>5. Analytics and Advertising</h2>
+  <p>
+    Gendie is <strong>100% free of tracking and advertisements</strong>.
+  </p>
+  <ul>
+    <li>No analytics SDKs (no Google Analytics, Firebase, etc.).</li>
+    <li>No advertising identifiers or behavioral tracking.</li>
+    <li>No "phone home" telemetry.</li>
+  </ul>
+
+  <h2>6. Third-Party Content Licences</h2>
+  <p>The App uses datasets and audio sourced from open-source contributors:</p>
+  <ul>
+    <li><strong>Word Lists:</strong> FrequencyWords (HermitDave), redistributed under CC BY-SA 4.0.</li>
+    <li><strong>Audio:</strong> Recorded pronunciation samples from <a href="https://lingualibre.org">Lingua Libre</a>, licensed under CC BY-SA 4.0.</li>
+  </ul>
+
+  <h2>7. Children’s Privacy</h2>
+  <p>
+    Gendie does not collect personal information and is safe for users of all ages. Because we do not collect data or maintain accounts, we do not have a way to identify or store information about children.
+  </p>
+
+  <h2>8. Your Choices and Controls</h2>
+  <ul>
+    <li><strong>Data Deletion:</strong> Uninstalling the App or clearing "App Data" in Android settings will permanently delete all local progress and statistics.</li>
+    <li><strong>Audio Management:</strong> You can delete downloaded audio packs at any time through the in-app settings without affecting your learning progress.</li>
+  </ul>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>
+    This policy may be updated as new features are added. The latest version is always available at: 
+    <a href="https://severus0.github.io/gendie_privacy_policy/">https://severus0.github.io/gendie_privacy_policy/</a>.
+  </p>
+
+  <h2>10. Contact</h2>
+  <p>If you have questions regarding this policy or data handling, please contact:</p>
+  <p>
+    <strong>Seweryn Polec</strong><br />
+    Email: <a href="mailto:sewerynpolec@gmail.com">sewerynpolec@gmail.com</a><br />
+    <b>Discord Community:</b> <a href="https://discord.gg/t2zyfCq6KH">https://discord.gg/t2zyfCq6KH</a>
+  </p>
+</body>
+</html>
