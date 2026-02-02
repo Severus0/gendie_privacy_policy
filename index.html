@@ -6,7 +6,7 @@
 </head>
 <body>
   <h1>Privacy Policy – “Gendie”</h1>
-  <p><strong>Last updated:</strong> 15 January 2026</p>
+  <p><strong>Last updated:</strong> 2 February 2026</p>
 
   <p>
     This privacy policy explains how the **“Gendie”**
@@ -29,12 +29,12 @@
   </ul>
 
   <h2>2. Data Handling and Storage</h2>
-  <h3>2.1. Local Device Storage</h3>
+<h3>2.1. Local Device Storage</h3>
   <p>All learning progress and settings are stored locally on your device in language-specific profiles. This includes:</p>
   <ul>
     <li><strong>Learning Progress:</strong> Words seen, correct/incorrect counts, Spaced Repetition (SRS) intervals, and mastered word lists.</li>
     <li><strong>Statistics:</strong> Total scores, daily streaks, and answer accuracy.</li>
-    <li><strong>Preferences:</strong> Theme choices (Light/Dark), audio toggles, and learning thresholds for each language.</li>
+    <li><strong>Preferences:</strong> Theme choices (Light/Dark), audio toggles, learning thresholds, and <strong>custom feedback delay (flash duration) settings</strong> for each language.</li>
     <li><strong>Notification Settings:</strong> Custom schedules and times for daily reminders.</li>
   </ul>
   <p>
@@ -70,7 +70,8 @@
     The App contains links to external services (e.g., Wiktionary for word research or YouTube for tutorial videos). Opening these links triggers your device’s web browser. Interaction with these external sites is governed by their respective privacy policies.
   </p>
 
-  <h2>4. Permissions Used</h2>
+<h2>4. Permissions and System Signals</h2>
+  <p>The App uses specific system permissions and signals to ensure features work correctly across different environments:</p>
   <ul>
     <li><code>android.permission.INTERNET</code> & <code>android.permission.ACCESS_NETWORK_STATE</code><br />
       Used exclusively to download optional audio asset packs from GitHub.
@@ -79,10 +80,13 @@
       Used to display practice reminders. This is only active if you explicitly enable reminders and grant permission.
     </li>
     <li><code>android.permission.RECEIVE_BOOT_COMPLETED</code><br />
-      Used to reschedule your custom reminders after a device reboot.
+      Used so the App can reschedule your reminders after a device reboot.
     </li>
     <li><code>android.permission.SCHEDULE_EXACT_ALARM</code><br />
       Used to ensure notifications appear at the precise time you have configured.
+    </li>
+    <li><strong>System Time & Timezone Signals:</strong><br />
+      The App listens for <code>TIMEZONE_CHANGED</code> and <code>TIME_CHANGED</code> events. This is used solely to automatically adjust your scheduled reminders if you travel to a different timezone or if your local time changes (e.g., Daylight Savings), ensuring you are always notified at the correct local hour.
     </li>
   </ul>
 
